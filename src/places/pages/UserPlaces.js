@@ -19,7 +19,7 @@ const DUMMY_PLACES = [
   },
   {
     id: "p2",
-    title: "empire state building",
+    title: "emp. state building",
     description: "New York sky scraper",
     imageUrl:
       "https://newyorkyimby.com/wp-content/uploads/2020/09/DSCN0762-777x1036.jpg",
@@ -28,7 +28,7 @@ const DUMMY_PLACES = [
       lat: 40.7484405,
       lng: -73.9878531,
     },
-    creator: "u2",
+    creator: "u1",
   },
 ];
 
