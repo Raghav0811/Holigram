@@ -15,15 +15,21 @@ const NavLinks = (props) => {
           All Users
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/u1/places">My Holidays</NavLink>
-      </li>
-      <li>
-        <NavLink to="/places/new">Add Places</NavLink>
-      </li>
-      <li>
-        <NavLink to="/auth">Authenticate</NavLink>
-      </li>
+      {auth.isLoggedIn && (
+        <li>
+          <NavLink to="/u1/places">My Holidays</NavLink>
+        </li>
+      )}
+      {auth.isLoggedIn && (
+        <li>
+          <NavLink to="/places/new">Add Places</NavLink>
+        </li>
+      )}
+      {!auth.isLoggedIn && (
+        <li>
+          <NavLink to="/auth">Authenticate</NavLink>
+        </li>
+      )}
     </ul>
   );
 };
